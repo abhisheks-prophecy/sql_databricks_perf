@@ -1,0 +1,181 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "59",
+    "jobId" : "jobs/Perf_DBJob_Test",
+    "name" : "Perf_DBJob_Test",
+    "schedule" : "0 0 0 1/1 * ? 2090",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "59",
+      "name" : "dev_sql_databricks",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "eaRIsxvM_08JVefrEace-$$ldS8mqCDghpyebfyoq420" : {
+      "id" : "eaRIsxvM_08JVefrEace-$$ldS8mqCDghpyebfyoq420",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0",
+        "slug" : "DBT_0",
+        "x" : 220,
+        "y" : 200
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "WJ4QYg4dD0sDnDhLvmqr6$$22IePmAgSfL36zGzYLkgG",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "CP5p-w4Vos7iW3QSf61o2$$08S9uR9nvJ15aN8JM1PYE",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "runModelWithParents" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "model" : "z_test_perf_only_project_models",
+        "projectId" : "173",
+        "runOnlyModel" : "true",
+        "failFast" : true,
+        "loadingModels" : false,
+        "fullRefresh" : true,
+        "profile" : "run_profile",
+        "sqlFabricId" : "59",
+        "gitEntityValue" : "main",
+        "runModelWithChildren" : true,
+        "execDeps" : true,
+        "noAnonymousUsageStats" : true,
+        "execTest" : false,
+        "warnError" : false,
+        "currentProjectModels" : [ {
+          "label" : "z_test_perf_only_seeds",
+          "value" : "z_test_perf_only_seeds",
+          "id" : "173/.prophecy/metadata/sqlmodels/z_test_perf_only_seeds",
+          "name" : "z_test_perf_only_seeds"
+        }, {
+          "label" : "tpcds_perf_sql_0",
+          "value" : "tpcds_perf_sql_0",
+          "id" : "173/.prophecy/metadata/sqlmodels/tpcds_perf_sql_0",
+          "name" : "tpcds_perf_sql_0"
+        }, {
+          "label" : "test_perf_model_0",
+          "value" : "test_perf_model_0",
+          "id" : "173/.prophecy/metadata/sqlmodels/test_perf_model_0",
+          "name" : "test_perf_model_0"
+        }, {
+          "label" : "z_test_perf_only_project_models",
+          "value" : "z_test_perf_only_project_models",
+          "id" : "173/.prophecy/metadata/sqlmodels/z_test_perf_only_project_models",
+          "name" : "z_test_perf_only_project_models"
+        }, {
+          "label" : "test_perf_model_3_use_all",
+          "value" : "test_perf_model_3_use_all",
+          "id" : "173/.prophecy/metadata/sqlmodels/test_perf_model_3_use_all",
+          "name" : "test_perf_model_3_use_all"
+        }, {
+          "label" : "test_perf_model_2",
+          "value" : "test_perf_model_2",
+          "id" : "173/.prophecy/metadata/sqlmodels/test_perf_model_2",
+          "name" : "test_perf_model_2"
+        }, {
+          "label" : "tpcds_perf_sql_3_useall_tpcds",
+          "value" : "tpcds_perf_sql_3_useall_tpcds",
+          "id" : "173/.prophecy/metadata/sqlmodels/tpcds_perf_sql_3_useall_tpcds",
+          "name" : "tpcds_perf_sql_3_useall_tpcds"
+        }, {
+          "label" : "tpcds_perf_sql_2",
+          "value" : "tpcds_perf_sql_2",
+          "id" : "173/.prophecy/metadata/sqlmodels/tpcds_perf_sql_2",
+          "name" : "tpcds_perf_sql_2"
+        }, {
+          "label" : "tpcds_perf_sql_1",
+          "value" : "tpcds_perf_sql_1",
+          "id" : "173/.prophecy/metadata/sqlmodels/tpcds_perf_sql_1",
+          "name" : "tpcds_perf_sql_1"
+        }, {
+          "label" : "test_perf_model_1",
+          "value" : "test_perf_model_1",
+          "id" : "173/.prophecy/metadata/sqlmodels/test_perf_model_1",
+          "name" : "test_perf_model_1"
+        } ]
+      }
+    },
+    "P2tx7fUgfmybLtAGNW_Jl$$GmA7pJtHIk6RY27_HwZnM" : {
+      "id" : "P2tx7fUgfmybLtAGNW_Jl$$GmA7pJtHIk6RY27_HwZnM",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 440,
+        "y" : 220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "sMTvEa0H-I35nzXykS13r$$CrqXpMqeSl9Ec7sju6kR5",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "fI0qfMUHrG8qnMYbUyOOW$$pVp2xRQNhAdT96qq6J9eq",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : "print(\"hello\")"
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "aUbFW1PaIRFIjt1nLQaWb$$_YwUnrYi99f6d50h2cWhc",
+    "source" : "eaRIsxvM_08JVefrEace-$$ldS8mqCDghpyebfyoq420",
+    "target" : "P2tx7fUgfmybLtAGNW_Jl$$GmA7pJtHIk6RY27_HwZnM",
+    "sourcePort" : "CP5p-w4Vos7iW3QSf61o2$$08S9uR9nvJ15aN8JM1PYE",
+    "targetPort" : "sMTvEa0H-I35nzXykS13r$$CrqXpMqeSl9Ec7sju6kR5"
+  } ]
+}

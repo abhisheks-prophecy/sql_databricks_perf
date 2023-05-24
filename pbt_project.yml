@@ -8,7 +8,31 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/Perf_DBJob_Test:
+    name: Perf_DBJob_Test
+    description: ''
+    fabricUID: 59
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 0 1/1 * ? 2090
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-05-24 06:53:10'
+    modifiedAt: '2023-05-24 06:56:13'
+    author: abhisheks+e2etests@prophecy.io
 functions:
   author: null
   createdAt: '2023-05-19 12:47:37'
@@ -545,6 +569,21 @@ sqlSources:
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-05-19 13:11:34'
       modifiedAt: '2023-05-19 13:11:34'
+    - name: table_with_1k_columns
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-05-24 05:42:36'
+      modifiedAt: '2023-05-24 05:42:36'
+    - name: table_with_500_columns
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-05-24 05:44:34'
+      modifiedAt: '2023-05-24 05:44:34'
+    - name: table_with_250_columns
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-05-24 05:51:48'
+      modifiedAt: '2023-05-24 05:51:48'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
